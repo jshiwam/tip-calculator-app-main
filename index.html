@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/index.css"/>
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="logo">
+  <img src="./images/logo.svg"  alt="Logo"/>
+  </div>
+  <div class="container">
+    <div class="input-fields">
+    <div class="price">
+      <label for="bill" class="title"> Bill</label>
+      <input type="number" id="bill" name="bill"/>
+    </div>
+    <div class="tips">
+      <label for="tip" class="title">Select Tip %</label>
+      <div class="percents-container">
+        <input type="button" name="tip" value="5%"/>
+        <input type="button" name="tip" value="10%"/>
+        <input type="button" name="tip" value="15%"/>
+        <input type="button" name="tip" value="20%"/>
+        <input type="button" name="tip" value="25%"/>
+        <input type="number" name="tip" placeholder="Custom"/>
+      </div>
+    </div>
+    <div class="people">
+      <label for="numbers" class="title">Number of People</label>
+      <input type="number" id="numbers" name="numbers" value="1"/>
+    </div>  
+    </div>
+    <div class="output-disp">
+    <div class="tip-amount">
+      <div class="title">Tip&nbspAmount<span>/&nbspperson</span></div>
+      <div class="disp-amount">$0.0</div>
+    </div>
+    <div class="total-amount">
+      <div class="title">Total<span>/&nbspperson</span></div>
+      <div class="disp-amount">$0.0</div>
+    </div>
+    <div class="reset">Reset</div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
